@@ -1,0 +1,3 @@
+Bank customers churn prediction using a simple ann model 
+features considered for predicting churn are: customers age, tenure,creditscore, balance, monthlysalary, gender, isactivemember etc.
+accuracy of the model is 86%
