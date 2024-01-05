@@ -1,9 +1,3 @@
-"""
-CIS 561- Aritificial Intelligence- Project 1 - Task-3
-Name: Adithya Prahasith Malladi
-Student ID: 02115295
-Email ID:amalladi@umassd.edu
- """
 
 import heapq
 # input the number of rows for the grid eg:5 
