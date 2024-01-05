@@ -1,0 +1,8 @@
+﻿RegisteredFor("x", "Algebra101") ==> Student("x")
+FailedMidterm("x") ==> NeedsExtraHelp("x")
+ScoreAbove90("x") ==> EligibleForHonorRoll("x")
+AsksForTutoring("x") ==> ReceivesTutoring("x")
+StrugglesWith("x","y") ==> ReceivesHelpOn("y")
+StrugglesWith("Amy", "QuadraticEquations")
+FailedMidterm("Bob")
+ScoreAbove90("Charlie")

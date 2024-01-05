@@ -1,0 +1,3 @@
+﻿StrugglesWith("Amy", "QuadraticEquations")
+FailedMidterm("Bob")
+ScoreAbove90("Charlie")
