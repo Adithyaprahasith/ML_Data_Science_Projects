@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+  </head>
+  <style>
+    body {margin:0; font-family: 'Arvo';}
+.tb{
+  border-radius: 10px;
+  padding: 5px;
+  height: 40px;
+  width: 250px;
+  font-family: 'Arvo';
+  color: indianred;
+}
+.tyot{
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  left:550px;
+  font-size: 30px;
+  font-family: 'Arvo'
+}
+.in_od{
+  position: absolute;
+  text-align: center;
+  top: 250px;
+  left:600px;
+  font-family: 'Arvo';
+
+}
+.q1{
+   font-size: 25px;
+   font-family: 'Arvo'
+}
+.on{
+  height: 30px;
+  width: 250px;
+  font-family: 'Arvo'
+  border-radius: 20px;
+  padding: 5px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+li {
+  float: left;
+display: inline-block;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+li a:hover:not(.active) {
+  background-color: #1E90FF;
+}
+
+.active {
+  background-color: #1E90FF;
+
+}
+.log{
+  float: right;
+}
+</style>
+
+<body>
+<ul>
+  <li><a class="" href="main_page.html">Home</a></li>
+  <li><a href="mobiles.php">Mobiles</a></li>
+  <li><a href="laptops.php">Laptops</a></li>
+  <li><a href="watches.php">Watches</a></li>
+
+  <div class="log">
+      <li><a class="active" href="signup.html" id="sup">Signup</a></li>
+      <li><a href="signin.html" id="sinn">Login</a></li>
+  </div>
+</ul>
+
+<h2 class="tyot">Create your Account </h2><br><br>
+<div id="signup">
+  <form action="signup.php" method="POST" class="in_od" onsubmit="return validateForm()">
+  <label class="fn" for="fname">First Name</label>
+  <input class="fname" type="text" id="fname" name="fname" value=""><br><br>
+
+<label class="ln" for="lname">Last Name</label>
+  <input class="lname" type="text" id="lname" name="lname" value=""><br><br>
+
+   <label for="pwd">Password</label>
+  <input type="password" id="pwd" name="pwd"><br><br>
+<label for="cpwd">Confirm Password</label>
+  <input type="password" id="cpwd" name="cpwd"><br><br>
+  <label class="pn" for="pnum">Phone Number</label>
+  <input class="pnum" type="number" id="pnum" name="pnum" value=""><br><br>
+
+  <label class="em" for="email">Email Address</label>
+  <input class="email" type="email" id="email" name="email" value=""><br><br>
+
+<label class="add" for="addr">Address</label>
+  <input class="addr" type="text" id="addr" name="addr" value=""><br><br>
+
+<label for="gender">Gender</label>
+  <select name="gender" id="gender">
+    <option value=""></option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="prefer not to say">prefer not to say</option>
+
+  </select><br><br>
+
+  <input type="submit" class='tb' value="Create" onclick="">
+</form> 
+
+</div>
+
+<script>
+        function validateForm() {
+            var fname = document.getElementById('fname').value;
+            var lname = document.getElementById('lname').value;
+            var pwd = document.getElementById('pwd').value;
+            var cpwd = document.getElementById('cpwd').value;
+            var pnum = document.getElementById('pnum').value;
+            var email = document.getElementById('email').value;
+            var addr = document.getElementById('addr').value;
+            var gender = document.getElementById('gender').value;
+
+            if (fname === '' || lname === '' || pwd === '' || pnum === '' || email === '' || addr === '' || gender === '') {
+                alert('Please fill out all fields.');
+                return false;
+            }
+            if(pwd!=cpwd) {
+                alert('passwords doesnot match,try again');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>
