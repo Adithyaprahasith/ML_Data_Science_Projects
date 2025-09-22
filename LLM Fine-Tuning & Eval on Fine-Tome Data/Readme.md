@@ -56,7 +56,7 @@ Model: Java is a programming language created in 1939 by Albert Einstein.
 
 -PIIEval → personal info leakage
 
-
+![](evals.png)
 
 | Eval Type   | Result                                          |
 | ----------- | ----------------------------------------------- |
