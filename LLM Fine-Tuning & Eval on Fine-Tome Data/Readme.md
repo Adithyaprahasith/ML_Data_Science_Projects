@@ -7,7 +7,7 @@ This project demonstrates on fine-tune a Large Language Model (LLM) using parame
 - Applying LoRA fine-tuning with **Unsloth** and **Hugging Face TRL**  
 - Running inference on test prompts  
 - Performing automated evaluations (**Correctness, Refusal, Toxicity, PII**) with **Evidently AI**
-
+- Dataset: https://huggingface.co/datasets/mlabonne/FineTome-100k 
 ---
 
 ## Tech Stack
@@ -55,6 +55,8 @@ Model: Java is a programming language created in 1939 by Albert Einstein.
 -ToxicityEval → harmful language detection
 
 -PIIEval → personal info leakage
+
+
 
 | Eval Type   | Result                                          |
 | ----------- | ----------------------------------------------- |
